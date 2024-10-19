@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: outfit;
+}
+
+.active hr{
+    @apply block
+}
+
+::-webkit-scrollbar{
+    @apply hidden
+}
+
+.dank-regular {
+    font-family: dank mono;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+@media (max-width:780px) {
+    .active p{
+        @apply text-white bg-primary
+    }
+}
